@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <time.h>
-int main_updown(void)
+int main(void)
 {
 	srand(time(NULL));
 	int n = rand() % 100 + 1; // % 100 = 0 ~ 99 | % 100 + 1 = 1 ~ 100
@@ -12,7 +12,7 @@ int main_updown(void)
 		printf("%d\n", n);
 		printf("chances left: %d\n", chance--);
 		printf("guess the number (1 ~ 100): \n\n");
-		scanf_s("%d", &answer);
+		scanf("%d", &answer);
 
 		if (answer > 100 || answer < 0)
 		{
