@@ -12,7 +12,7 @@ int main(void)
 		printf("%d\n", n);
 		printf("chances left: %d\n", chance--);
 		printf("guess the number (1 ~ 100): \n\n");
-		scanf("%d", &answer);
+		scanf_s("%d", &answer);
 
 		if (answer > 100 || answer < 0)
 		{
